@@ -1,0 +1,126 @@
+.home-section {
+  position: relative;
+  height: 100vh;
+  background-image: url("C:/Users/Excalibur/Desktop/portfolio/src/jpg/612d01b99e0e0d015f21fd93_fotis-fotopoulos-DuHKoV44prg-unsplash-min.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* Saydam koyu arka plan */
+  padding: 60px;
+  border-radius: 20px;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+}
+
+.hello-text {
+  font-size: 5rem; /* BÜYÜTÜLDÜ */
+  font-weight: bold;
+  color: #9b30ff; /* Canlı mor renk */
+  position: relative;
+}
+
+.dots::after {
+  content: "...";
+  animation: dots-boomerang 3s infinite;
+}
+
+@keyframes dots-boomerang {
+  0% {
+    content: "";
+  }
+  33% {
+    content: ".";
+  }
+  66% {
+    content: "..";
+  }
+  100% {
+    content: "...";
+  }
+}
+
+.typewriter-text {
+  margin-top: 20px;
+  font-size: 2rem; /* BÜYÜTÜLDÜ */
+  font-family: monospace;
+  color: white;
+  white-space: nowrap;
+  border-right: 2px solid white;
+  overflow: hidden;
+  width: 0;
+  animation: typing 5s steps(60, end) infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.home-section {
+  position: relative;
+  height: calc(100vh - 70px); /* navbar yüksekliği kadar eksilt */
+  padding-top: 70px; /* navbar yüksekliği kadar boşluk */
+  background-image: url("C:/Users/Excalibur/Desktop/portfolio/src/jpg/612d01b99e0e0d015f21fd93_fotis-fotopoulos-DuHKoV44prg-unsplash-min.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .home-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  .overlay {
+    width: 100%;
+    max-width: 95%;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+  }
+
+  .text-container {
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .hello-text {
+    font-size: 2.5rem;
+  }
+
+  .typewriter-text {
+    font-size: 1.2rem;
+    white-space: normal;
+    width: 100%;
+    animation: none; /* Dilersen mobilde sabit göster */
+    border-right: none;
+  }
+
+  .vertical-label-home {
+    display: none; /* Dilersen mobilde gizleyebilirsin */
+  }
+}
+

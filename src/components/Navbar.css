@@ -1,0 +1,100 @@
+:root {
+  --navbar-height: 70px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--navbar-height);
+  background-color: #1e1e2f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 60px;
+  z-index: 1000;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  transform: translateX(-50px); /* sola kaydırma */
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #9b30ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;     /* Ortada logo ve isim için */
+    align-items: center;
+    padding: 10px 8px;
+  }
+
+  .navbar-logo {
+    flex-basis: 100%;
+    text-align: center;          /* Logo + isim ortalanır */
+    margin-bottom: 4px;
+  }
+
+  .navbar-links {
+    display: flex;
+    justify-content: flex-end;   /* Sayfa linkleri sağa hizalanır */
+    flex-wrap: wrap;
+    gap: 10px;                    /* Çok az boşluk */
+    width: 100%;                /* Tüm genişliği kaplasın */
+  }
+
+  .navbar-links a {
+    font-size: 8px;            /* Küçük yazı boyutu */
+    padding: 0 2px;
+    margin: 0;
+    white-space: nowrap;
+  }
+}
