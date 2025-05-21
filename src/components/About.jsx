@@ -5,7 +5,7 @@
 
 import React from "react";
 import "./About.css";
-import profile from "C:/Users/Excalibur/Desktop/portfolio/src/jpg/c6b7a9a4-fe09-4b1e-a08c-d6afbacef7ce.jpeg"; // Kendi görselinle değiştir
+import profile from "C:/Users/Excalibur/Desktop/portfolio/src/jpg/c6b7a9a4-fe09-4b1e-a08c-d6afbacef7ce.jpg"; // Kendi görselinle değiştir
 
 const About = () => {
   return (
