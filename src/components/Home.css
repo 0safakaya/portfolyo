@@ -1,7 +1,7 @@
 .home-section {
   position: relative;
   height: 100vh;
-  background-image: url("C:/Users/Excalibur/Desktop/portfolio/src/jpg/612d01b99e0e0d015f21fd93_fotis-fotopoulos-DuHKoV44prg-unsplash-min.jpg");
+  
   background-size: cover;
   background-position: center;
   display: flex;
@@ -71,7 +71,7 @@
   position: relative;
   height: calc(100vh - 70px); /* navbar yüksekliği kadar eksilt */
   padding-top: 70px; /* navbar yüksekliği kadar boşluk */
-  background-image: url("C:/Users/Excalibur/Desktop/portfolio/src/jpg/612d01b99e0e0d015f21fd93_fotis-fotopoulos-DuHKoV44prg-unsplash-min.jpg");
+ 
   background-size: cover;
   background-position: center;
   display: flex;
@@ -123,4 +123,3 @@
     display: none; /* Dilersen mobilde gizleyebilirsin */
   }
 }
-

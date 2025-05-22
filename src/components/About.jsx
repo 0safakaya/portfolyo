@@ -1,11 +1,6 @@
-
-
-
-
-
 import React from "react";
 import "./About.css";
-import profile from "C:/Users/Excalibur/Desktop/portfolio/src/jpg/c6b7a9a4-fe09-4b1e-a08c-d6afbacef7ce.jpg"; // Kendi görselinle değiştir
+
 
 const About = () => {
   return (
@@ -21,7 +16,10 @@ const About = () => {
           </p>
         </div>
         <div className="about-image">
-          <img src={profile} alt="Profil" />
+           <img
+            src={process.env.PUBLIC_URL + "/jpg/83551f0c-3ee5-4a40-9423-89fe9df44af1.jpeg"}
+            alt="Profil"
+          />
         </div>
       </div>
       <div className="vertical-label">BEN KİMİM ?</div>
