@@ -6,9 +6,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-   <img src="/jpg/kaya_yazilim_favicon.png" />
+   <img src="/jpg/kaya_yazilim_favicon.png" className="logo"/>
 
-        <span className="logo-text">       Safa Kaya</span>
+        <span className="logo-text">Safa Kaya</span>
       </div>
       <ul className="navbar-links">
         <li><a href="#home">Anasayfa</a></li>
