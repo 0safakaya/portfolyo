@@ -28,8 +28,8 @@ html, body {
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 20px;
   margin-right: 10px;
 }
 
@@ -72,6 +72,11 @@ html, body {
 
 
 @media (max-width: 768px) {
+
+    .logo {
+    width: 15px;
+    height: 20px;
+  }
   .navbar {
     flex-wrap: wrap;
     justify-content: center;     /* Ortada logo ve isim için */
